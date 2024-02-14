@@ -16,41 +16,51 @@
 <body>
   <header>
     <nav>
-      <article>
-        <a href="">
-          <i class="fa fa-code"></i>
+      <article class="nav__logo">
+        <a href="#">
+          <i class="fa fa-code" id="icon__code"></i>
         </a>
-        <h3>Mojica's <br> web development</h3>
+        <span>
+          <h3>MOJICA'S</h3>
+          <h5>WEB DEVELOPMENT</h5>
+        </span>
       </article>
-      
-      <article>
+
+      <article class="nav__links">
         <ul>
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>About us</li>
-          <li>Contact us</li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact us</a></li>
         </ul>
       </article>
 
-      <a href="">
-        <i class="fa fa-github"></i>
-      </a>
+      <article class="nav__utilities">
+        <a href="">
+          <i class="fa fa-github" id="icon__github"></i>
+        </a>
+        <h3>Our team in GitHub!</h3>
+      </article>
     </nav>
   </header>
 
   <main class="profile">
     <section class="uno">
-        <img src="./assets/mujer.jpg" alt="Jessica Randall - profile photo" class="profile__avatar">
-        <h1 class="profile__name"><p>Jessica Randall</p></h1>
-        <p class="profile__city">London, United Kingdom</p>
-        <p class="profile__description">"Front-end developer and avid reader."</p>
+      <img src="./assets/mujer.jpg" alt="Jessica Randall - profile photo" class="profile__avatar">
+      <h1 class="profile__name">
+        <p>Jessica Randall</p>
+      </h1>
+      <p class="profile__city">London, United Kingdom</p>
+      <p class="profile__description">"Front-end developer and avid reader."</p>
     </section>
     <section class="dos">
-        <button class="profile__btn"><p>GitHub</p></button>
-        <button class="profile__btn">Frontend Mentor</button>
-        <button class="profile__btn">LinkedIn</button>
-        <button class="profile__btn">Twitter</button>
-        <button class="profile__btn">Instagram</button>
+      <button class="profile__btn">
+        <p>GitHub</p>
+      </button>
+      <button class="profile__btn">Frontend Mentor</button>
+      <button class="profile__btn">LinkedIn</button>
+      <button class="profile__btn">Twitter</button>
+      <button class="profile__btn">Instagram</button>
     </section>
   </main>
 </body>

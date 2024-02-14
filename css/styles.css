@@ -4,6 +4,7 @@
     --githubViolet:indigo;
 }
 
+/*------GENERAL STYLES------*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,19 +13,31 @@
 }
 
 html{
-    font-size: 16px;   
+    font-size: 25px;   
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----BODY----*/
+
 body{
-    background-color: rgb(15, 23, 42);
-    font-size: 25px;
     height: 100%;
     width: 100%;
+    background-color: rgb(15, 23, 42);
     background-image: linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
+/*----ICONS SETUP----*/
+.nav__logo a i, .nav__utilities a i{
+    font-size: 3.2rem;
+}
+
+/*------HEADER & CHILDS-----*/
 header{
     margin: 2% 5% 5% 5%;
 }
@@ -35,15 +48,35 @@ header nav{
     place-items: center;
 }
 
+.nav__logo{
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 3em 1em;
+    padding: 1em;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+}
+
+.nav__logo a i{
+    margin-bottom: 16px;
+    }
+
+
+
+.nav__links{
+    width: 50%;
+}
+
 header nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-header nav:first-child{
-    text-align: center;
-}
+
+
+
+
 
 .profile{
     background: linear-gradient(45deg, #12429c, rgb(87, 7, 199), #c5bdc3);
@@ -60,9 +93,8 @@ header nav:first-child{
     object-fit: cover;
 }
 
-.profile__name{
-    font-size: 48px;
-}
+
+
 
 /* section button > p {
     
