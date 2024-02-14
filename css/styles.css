@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --githubViolet:indigo;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html{
+    font-size: 16px;
+    
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: hsl(231, 82%, 15%);
+    font-size: 25px;
+    height: 100vh;
+}
+
+.profile{
+    background: linear-gradient(45deg, #12429c, rgb(87, 7, 199), #c5bdc3);
+    border-radius: 3em 2em;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.profile__avatar{
+    border-radius: 3em 1em;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.profile__name{
+    font-size: 48px;
+}
+
+/* section button > p {
+    
+} */
+
+button{
+    border-radius: 10px;
+    padding: 6px;
+    width: 50%;
+    background-color: var(--githubViolet);
+    color: white;
+    font-size: 20px;
+    border: none;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+
+section button:first-child{
+    color: mintcream;
+}
+
+.dos{
+    margin-top: 5%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
