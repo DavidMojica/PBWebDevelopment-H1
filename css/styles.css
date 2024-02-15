@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-    --githubViolet:indigo;
+    --page-background:rgb(15, 23, 42);
+    --violet-logo:rgb(168, 85, 247);
+    --violet-logo-bg:rgb(87, 7, 199);
 }
 
 /*------GENERAL STYLES------*/
@@ -10,6 +12,7 @@
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -27,13 +30,13 @@ a{
 body{
     height: 100%;
     width: 100%;
-    background-color: rgb(15, 23, 42);
+    background-color:var(--page-background) ;
     background-image: linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
 /*----ICONS SETUP----*/
-.nav__logo a i, .nav__utilities a i{
+.nav__logo i, .nav__utilities a i{
     font-size: 3.2rem;
 }
 
@@ -48,6 +51,7 @@ header nav{
     place-items: center;
 }
 
+/*NAV LOGO*/
 .nav__logo{
     text-align: center;
     border: 1px solid #fff;
@@ -55,23 +59,41 @@ header nav{
     padding: 1em;
     letter-spacing: 2px;
     word-wrap: break-word;
+    background: linear-gradient(45deg, var(--violet-logo-bg) , transparent);
 }
 
-.nav__logo a i{
-    margin-bottom: 16px;
-    }
-
-
-
-.nav__links{
-    width: 50%;
+.nav__logo i{
+    color: var(--violet-logo);
+    font-weight: bolder;
 }
 
+.nav__logo span h3{
+    margin: 12px 0 12px 0;
+}
+
+.nav__logo span h5{
+    color: var(--violet-logo);
+}
+
+/*NAV LINKS*/
 header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
+
+.nav__links{
+    width: 50%;
+}
+
+.nav__links ul li:first-child{
+    color: var(--violet-logo);
+}
+
+.nav__links ul li:hover{
+    color: var(--violet-logo);
+}
+
 
 
 
