@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
+    /*GENERAL*/
     --page-background:rgb(15, 23, 42);
     --violet-logo:rgb(168, 85, 247);
     --violet-logo-bg:rgb(87, 7, 199);
-    /* CAKES */
+    --dark-gray:#333;
+
+    /* CAKE PALETTE*/
     --cake-pink:#EC4899;
     --cake-violet:#8B5CF6;
 
     /* BRANDS */
     --github: #6A1D9B;
+    --twitter: #55acee;
+    --whatsapp: #00bb2d;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #0077b5;
+    --discord: rgb(88, 101, 242);
 }
 
 /*------GENERAL STYLES------*/
@@ -33,6 +43,10 @@ a{
     color: inherit;
 }
 
+ul{
+    list-style: none;
+}
+
 /*----BODY----*/
 
 body{
@@ -46,6 +60,26 @@ body{
 /*----ICONS SETUP----*/
 .nav__logo i, .nav__utilities a i{
     font-size: 3.2rem;
+}
+
+.fa-github{
+    color: var(--github);
+}
+
+.fa-instagram{
+    color: var(--instagram);
+}
+
+.fa-linkedin{
+    color: var(--linkedin);
+}
+
+.fa-twitter{
+    color: var(--twitter);
+}
+
+.fa-whatsapp{
+    color: var(--whatsapp);
 }
 
 /*------HEADER & CHILDS-----*/
@@ -84,9 +118,11 @@ header nav{
 }
 
 /*NAV LINKS*/
-header nav ul{
-    list-style: none;
+header nav ul, .social ul{
     display: flex;
+}
+
+header nav ul{
     justify-content: space-around;
     font-size: 1.5vw;
 }
@@ -108,11 +144,6 @@ header nav ul{
     text-align: center;
 }
 
-#icon__github{
-    color: var(--github);
-}
-
-
 /*------------MAIN & CHILDS-----------*/
 main{
     text-align: center;
@@ -128,22 +159,9 @@ main strong{
 }
 
 /*Profiles*/
-
 .profiles{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 4%;
 }
 
-.profile{
-    border: 1px solid white;
-    height: 400px;
-    display: grid;
-    place-items: center;
-}
-
-.profile img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}

@@ -57,25 +57,46 @@ border-radius: 40%;
     animation-duration: 45s;
 }
 
-.card__wave figcaption > p, .card__wave blockquote > p, .card__wave > img, .card__wave .social{
+.card__info{
     position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 2.1fr 0.6fr 0.6fr 0.7fr;
+    height: 100%;
 }
 
 .profile__avatar{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    margin: 15% 0 10% 0;
     border-radius: 100%;
+    opacity: .95;
 }
 
 .profile__name{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--wave-cyan);
 }
 
-.profile__city{
-    margin-bottom: 4%;
+.social{
+    width: 100%;
+}
+.social ul{
+    justify-content: center;
+}
+
+.social ul li a > i{
+    font-size: 1.7rem;
+    margin: 0 6px 0 6px;
+    background-color: var(--dark-gray);
+    padding: 8px;
+    border-radius: 20%;
+    transition: 500ms;
+}
+.social ul li a > i:hover{
+    background: #fff;
+    cursor: pointer;
 }
 
 
