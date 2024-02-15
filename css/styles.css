@@ -6,6 +6,8 @@
     --violet-logo:rgb(168, 85, 247);
     --violet-logo-bg:rgb(87, 7, 199);
     --dark-gray:#333;
+    --dark-purple:#581c87;
+    --wave-blue:#5B42F3;
 
     /* CAKE PALETTE*/
     --cake-pink:#EC4899;
@@ -33,7 +35,6 @@
 html{
     font-size: 25px;   
     color: #fff;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -86,14 +87,20 @@ body{
 }
 
 /*------HEADER & CHILDS-----*/
-header{
-    margin: 2% 0 2% 0;
-}
+
 
 header nav{
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
     place-items: center;
+}
+
+header, .profiles{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    margin-top: 2%;
 }
 
 /*NAV LOGO*/
@@ -150,11 +157,11 @@ header nav ul{
 /*------------MAIN & CHILDS-----------*/
 main{
     text-align: center;
+    margin-top: 2%;
 }
 
 main strong{
     font-size: 3.5rem;
-    margin-bottom: 0.5rem; 
     background-clip: text; 
     color: transparent;
     background-image: linear-gradient(to right, violet, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
@@ -164,11 +171,11 @@ main strong{
 /*Profiles*/
 .profiles{
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 
@@ -176,4 +183,32 @@ main strong{
 
 .contact__us{
     min-height: 100vh;
+    background: linear-gradient(to bottom, transparent, var(--dark-purple));
+    margin-top: 2%;
+    display: grid;
+    place-items: center;
+}
+
+/*Contact us*/
+.contact__view{
+    min-width: 800px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    height: 80vh;
+}
+
+.col{
+    text-align: center;
+    border:2em;
+}
+.col1{
+    grid-column: 1;
+    background-color: var(--wave-blue);
+}
+
+.col2{
+    background-color: #fff;
+    grid-column: 2;
 }
