@@ -19,7 +19,6 @@
     --twitter: #55acee;
     --pinterest: #bd081c;
     --linkedin: #0077b5;
-    --discord: rgb(88, 101, 242);
 }
 
 /*------GENERAL STYLES------*/
@@ -80,6 +79,10 @@ body{
 
 .fa-whatsapp{
     color: var(--whatsapp);
+}
+
+.fa-pinterest{
+    color: var(--pinterest);
 }
 
 /*------HEADER & CHILDS-----*/
@@ -163,5 +166,11 @@ main strong{
     display: flex;
     justify-content: space-evenly;
     margin-top: 4%;
+    margin-bottom: 2%;
 }
 
+/*CONTACT US*/
+
+.contact__us{
+    min-height: 100vh;
+}
