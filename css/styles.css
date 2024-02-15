@@ -120,9 +120,30 @@ main{
 
 main strong{
     font-size: 3.5rem;
-    margin-bottom: 0.5rem; /* Equivalente a mb-2 */
-    background-clip: text; /* Equivalente a bg-clip-text */
-    color: transparent; /* Equivalente a text-transparent */
-    background-image: linear-gradient(to right, #fff, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
-    /* Estilos de sombra */
+    margin-bottom: 0.5rem; 
+    background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(to right, violet, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
+
+}
+
+/*Profiles*/
+
+.profiles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.profile{
+    border: 1px solid white;
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
