@@ -1,76 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-    --githubViolet:indigo;
+    --page-background:rgb(15, 23, 42);
+    --violet-logo:rgb(168, 85, 247);
+    --violet-logo-bg:rgb(87, 7, 199);
+    /* CAKES */
+    --cake-pink:#EC4899;
+    --cake-violet:#8B5CF6;
+
+    /* BRANDS */
+    --github: #6A1D9B;
 }
 
+/*------GENERAL STYLES------*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 html{
-    font-size: 16px;
-    
+    font-size: 25px;   
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----BODY----*/
 
 body{
-    display: grid;
-    place-items: center;
-    background-color: hsl(231, 82%, 15%);
-    font-size: 25px;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color:var(--page-background) ;
+    background-image: linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
-.profile{
-    background: linear-gradient(45deg, #12429c, rgb(87, 7, 199), #c5bdc3);
-    border-radius: 3em 2em;
-    color: white;
-    padding: 50px;
+/*----ICONS SETUP----*/
+.nav__logo i, .nav__utilities a i{
+    font-size: 3.2rem;
+}
+
+/*------HEADER & CHILDS-----*/
+header{
+    margin: 2% 0 2% 0;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: .3fr 1fr .3fr;
+    place-items: center;
+}
+
+/*NAV LOGO*/
+.nav__logo{
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 3em 1em;
+    padding: 1em;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    background: linear-gradient(45deg, var(--violet-logo-bg) , transparent);
+}
+
+.nav__logo i{
+    color: var(--violet-logo);
+    font-weight: bolder;
+}
+
+.nav__logo span h3{
+    margin: 12px 0 12px 0;
+}
+
+.nav__logo span h5{
+    color: var(--violet-logo);
+}
+
+/*NAV LINKS*/
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.nav__links{
+    width: 55%;
+}
+
+.nav__links ul li:first-child{
+    color: var(--violet-logo);
+}
+
+.nav__links ul li:hover{
+    color: var(--violet-logo);
+}
+
+/*NAV UTILITIES*/
+.nav__utilities{
     text-align: center;
 }
 
-.profile__avatar{
-    border-radius: 3em 1em;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+#icon__github{
+    color: var(--github);
 }
 
-.profile__name{
-    font-size: 48px;
+
+/*------------MAIN & CHILDS-----------*/
+main{
+    text-align: center;
 }
 
-/* section button > p {
-    
-} */
+main strong{
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem; 
+    background-clip: text; 
+    color: transparent;
+    background-image: linear-gradient(to right, violet, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
 
-button{
-    border-radius: 10px;
-    padding: 6px;
-    width: 50%;
-    background-color: var(--githubViolet);
-    color: white;
-    font-size: 20px;
-    border: none;
-    transition: .5s;
 }
 
-button:hover{
-    background-color: violet;
-    cursor: pointer;
+/*Profiles*/
+
+.profiles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
 }
 
-section button:first-child{
-    color: mintcream;
-}
-
-.dos{
-    margin-top: 5%;
+.profile{
+    border: 1px solid white;
+    height: 400px;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr;
-    gap: 10px;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
