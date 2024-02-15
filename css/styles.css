@@ -13,6 +13,11 @@
     --cake-pink:#EC4899;
     --cake-violet:#8B5CF6;
 
+    /* GRAYSCALE PALETTE*/
+    --gs-ligthgray:#414141;
+    --gs-midgray:#313131;
+    --gs-darkgray:#212121;
+
     /* BRANDS */
     --github: #6A1D9B;
     --twitter: #55acee;
@@ -217,7 +222,7 @@ main strong{
 
 .col2{
     grid-column: 2;
-    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    background: linear-gradient(var(--gs-darkgray), var(--gs-darkgray)) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
     padding: 32px 24px;
     font-size: 14px;
@@ -251,7 +256,7 @@ input[type="text"] {
     color: #fff;
     font-family: inherit;
     background-color: transparent;
-    border: 1px solid #414141;
+    border: 1px solid var(--gs-ligthgray);
 }
 
 textarea{
@@ -261,7 +266,7 @@ textarea{
     resize: none;
     color: #fff;
     height: 96px;
-    border: 1px solid #414141;
+    border: 1px solid var(--gs-ligthgray);
     background-color: transparent;
     font-family: inherit;
 }
@@ -275,13 +280,17 @@ input[type="submit"]{
     color: #717171;
     font-weight: 600;
     width: 50%;
-    background: #313131;
-    border: 1px solid #414141;
+    background: var(--gs-midgray);
+    border: 1px solid var(--gs-ligthgray);
     padding: 12px 16px;
     font-size: inherit;
-    gap: 8px;
     margin-top: 8px;
     cursor: pointer;
     border-radius: 6px;
 }
 
+/*--------FOOTER--------*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
