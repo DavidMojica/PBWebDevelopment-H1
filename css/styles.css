@@ -88,7 +88,6 @@ header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
 }
 
 .nav__links{
@@ -140,6 +139,7 @@ main strong{
     height: 400px;
     display: grid;
     place-items: center;
+    background: linear-gradient(45deg, #fff, var(--cake-violet));
 }
 
 .profile img{
