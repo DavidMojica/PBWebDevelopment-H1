@@ -4,6 +4,7 @@
     --page-background:rgb(15, 23, 42);
     --violet-logo:rgb(168, 85, 247);
     --violet-logo-bg:rgb(87, 7, 199);
+    --github: #6a1d9b;
 }
 
 /*------GENERAL STYLES------*/
@@ -80,10 +81,11 @@ header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    font-size: 1.2rem;
 }
 
 .nav__links{
-    width: 50%;
+    width: 55%;
 }
 
 .nav__links ul li:first-child{
@@ -94,58 +96,14 @@ header nav ul{
     color: var(--violet-logo);
 }
 
-
-
-
-
-
-
-.profile{
-    background: linear-gradient(45deg, #12429c, rgb(87, 7, 199), #c5bdc3);
-    border-radius: 3em 2em;
-    color: white;
-    padding: 50px;
+/*NAV UTILITIES*/
+.nav__utilities{
     text-align: center;
 }
 
-.profile__avatar{
-    border-radius: 3em 1em;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+#icon__github{
+    color: var(--github);
 }
 
 
-
-
-/* section button > p {
-    
-} */
-
-button{
-    border-radius: 10px;
-    padding: 6px;
-    width: 50%;
-    background-color: var(--githubViolet);
-    color: white;
-    font-size: 20px;
-    border: none;
-    transition: .5s;
-}
-
-button:hover{
-    background-color: violet;
-    cursor: pointer;
-}
-
-section button:first-child{
-    color: mintcream;
-}
-
-.dos{
-    margin-top: 5%;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
+/*------------MAIN-----------*/
