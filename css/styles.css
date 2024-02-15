@@ -163,11 +163,14 @@ main strong{
 
 /*Profiles*/
 .profiles{
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 4%;
-    margin-bottom: 2%;
 }
+
 
 /*CONTACT US*/
 
