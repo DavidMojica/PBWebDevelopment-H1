@@ -4,7 +4,12 @@
     --page-background:rgb(15, 23, 42);
     --violet-logo:rgb(168, 85, 247);
     --violet-logo-bg:rgb(87, 7, 199);
-    --github: #6a1d9b;
+    /* CAKES */
+    --cake-pink:#EC4899;
+    --cake-violet:#8B5CF6;
+
+    /* BRANDS */
+    --github: #6A1D9B;
 }
 
 /*------GENERAL STYLES------*/
@@ -19,6 +24,8 @@
 html{
     font-size: 25px;   
     color: #fff;
+    width: 80%;
+    margin: 0 auto;
 }
 
 a{
@@ -43,7 +50,7 @@ body{
 
 /*------HEADER & CHILDS-----*/
 header{
-    margin: 2% 5% 5% 5%;
+    margin: 2% 0 2% 0;
 }
 
 header nav{
@@ -106,4 +113,16 @@ header nav ul{
 }
 
 
-/*------------MAIN-----------*/
+/*------------MAIN & CHILDS-----------*/
+main{
+    text-align: center;
+}
+
+main strong{
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem; /* Equivalente a mb-2 */
+    background-clip: text; /* Equivalente a bg-clip-text */
+    color: transparent; /* Equivalente a text-transparent */
+    background-image: linear-gradient(to right, #fff, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
+    /* Estilos de sombra */
+}
