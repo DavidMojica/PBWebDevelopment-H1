@@ -88,7 +88,7 @@ header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
 }
 
 .nav__links{
@@ -124,7 +124,7 @@ main strong{
     background-clip: text; 
     color: transparent;
     background-image: linear-gradient(to right, violet, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
-
+    padding: 2%;
 }
 
 /*Profiles*/
