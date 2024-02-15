@@ -5,20 +5,19 @@
 }
 
 .card__wave {
-    margin: 100px auto;
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;
-    width: 240px;
-    height: 330px;
+    width: 420px;
+    height: 520px;
     border-radius: 16px;
     overflow: hidden;
 }
   
 .wave {
     position: absolute;
-    width: 540px;
-    height: 700px;
+    width: 1000px;
+    height: 1420px;
     opacity: 0.6;
     left: 0;
     top: 0;
@@ -29,7 +28,7 @@
   
 
 .wave:nth-child(2), .wave:nth-child(3) {
-    top: 210px;
+    top: 350px;
 }
   
 .waving .wave {
@@ -57,6 +56,28 @@ border-radius: 40%;
 .wave:nth-child(3) {
     animation-duration: 45s;
 }
+
+.card__wave figcaption > p, .card__wave blockquote > p, .card__wave > img, .card__wave .social{
+    position: relative;
+}
+
+.profile__avatar{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15% 0 10% 0;
+    border-radius: 100%;
+}
+
+.profile__name{
+    font-size: 1.5rem;
+    color: var(--wave-cyan);
+}
+
+.profile__city{
+    margin-bottom: 4%;
+}
+
 
 @keyframes waving {
     0% {
