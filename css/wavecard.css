@@ -83,7 +83,7 @@ border-radius: 40%;
 .social ul li a > i{
     font-size: 1.7rem;
     margin: 0 6px 0 6px;
-    background-color: var(--dark-gray);
+    background-color: var(--gs-middlergray);
     padding: 8px;
     border-radius: 20%;
     transition: 500ms;
@@ -92,7 +92,6 @@ border-radius: 40%;
     background: #fff;
     cursor: pointer;
 }
-
 
 @keyframes waving {
     0% {

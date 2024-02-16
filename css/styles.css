@@ -28,7 +28,7 @@ body{
     height: 100%;
     width: 100%;
     background-color:var(--page-background) ;
-    background-image: linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px);
+    background-image: linear-gradient(to right, var(--infiniteGridColor) 1px, transparent 1px), linear-gradient(to bottom, var(--infiniteGridColor) 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
@@ -61,9 +61,11 @@ body{
     color: var(--pinterest);
 }
 
+.fa-google-plus{
+    color: var(--gplus);
+}
+
 /*------HEADER & CHILDS-----*/
-
-
 header nav{
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
@@ -139,7 +141,7 @@ main strong{
     font-size: 3.5rem;
     background-clip: text; 
     color: transparent;
-    background-image: linear-gradient(to right, violet, var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
+    background-image: linear-gradient(to right,  var(--cake-pink), var(--cake-violet)); /* Equivalente a bg-gradient-to-r from-white to-orange-400 */
     padding: 2%;
 }
 
@@ -153,12 +155,10 @@ main strong{
     margin-top: 2%;
 }
 
-
 /*CONTACT US*/
-
 .contact__us{
     min-height: 100vh;
-    background: linear-gradient(to bottom, transparent, var(--dark-purple));
+    background: linear-gradient(to bottom, transparent, var(--cake-purple));
     margin-top: 2%;
     display: grid;
     place-items: center;
@@ -192,12 +192,12 @@ main strong{
 
 .col2{
     grid-column: 2;
-    background: linear-gradient(var(--gs-darkgray), var(--gs-darkgray)) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    background: linear-gradient(var(--gs-darkgray), var(--gs-darkgray)) padding-box, linear-gradient(145deg, transparent 35%,var(--vi-pink), var(--vi-cyan)) border-box;
     border: 2px solid transparent;
     padding: 32px 24px;
     font-size: 14px;
     font-family: inherit;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -247,7 +247,7 @@ input[type="submit"]{
     justify-content: center;
     align-self: flex-start;
     font-family: inherit;
-    color: #717171;
+    color: var(--gs-verylightgray);
     font-weight: 600;
     width: 50%;
     background: var(--gs-midgray);
