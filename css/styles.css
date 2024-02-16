@@ -139,7 +139,6 @@ header nav ul, .social ul{
 
 header nav ul{
     justify-content: space-around;
-    font-size: 1.5vw;
 }
 
 .nav__links{
@@ -214,6 +213,7 @@ main strong{
     border-radius: 2em 0em 0em 2em;
     display: grid;
     place-items: center;
+    background: linear-gradient(45deg, #fff, var(--cake-violet));
 }
 
 .col1 blockquote h2{
