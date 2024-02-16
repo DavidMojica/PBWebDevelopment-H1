@@ -1,9 +1,3 @@
-:root{
-    --wave-purple:#AF40FF;
-    --wave-blue:#5B42F3;
-    --wave-cyan:#00DDEB;
-}
-
 .card__wave {
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
@@ -89,7 +83,7 @@ border-radius: 40%;
 .social ul li a > i{
     font-size: 1.7rem;
     margin: 0 6px 0 6px;
-    background-color: var(--dark-gray);
+    background-color: var(--gs-middlergray);
     padding: 8px;
     border-radius: 20%;
     transition: 500ms;
@@ -98,7 +92,6 @@ border-radius: 40%;
     background: #fff;
     cursor: pointer;
 }
-
 
 @keyframes waving {
     0% {
