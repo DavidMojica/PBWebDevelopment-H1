@@ -293,4 +293,15 @@ input[type="submit"]{
 footer{
     display: flex;
     justify-content: space-evenly;
+    background: linear-gradient(130deg, var(--gs-darkgray), var(--gs-midgray));
+    padding: 4%;
+}
+
+footer article {
+    text-align: center;
+}
+
+footer article  i{
+    font-size: 520px;
+    color: var(--dark-purple);
 }
