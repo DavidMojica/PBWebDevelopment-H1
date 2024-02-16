@@ -1,9 +1,3 @@
-:root{
-    --wave-purple:#AF40FF;
-    --wave-blue:#5B42F3;
-    --wave-cyan:#00DDEB;
-}
-
 .card__wave {
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
