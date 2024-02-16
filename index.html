@@ -7,12 +7,11 @@
   <title>Mojica's Development | Home</title>
   <!-- Self Css -->
   <link rel="stylesheet" href="./css/styles.css">
-
+  <!-- Components -->
+  <link rel="stylesheet" href="./css/wavecard.css">
   <!-- fa fa-icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-
 <body>
   <header>
     <nav>
@@ -35,36 +34,127 @@
 
       <article class="nav__utilities">
         <a href="">
-          <i class="fa fa-github" id="icon__github"></i>
+          <i class="fa fa-github"></i>
         </a>
         <h3>Our team in GitHub!</h3>
       </article>
     </nav>
   </header>
-
   <main>
-    <strong>Meet our team <i class="fa fa-code"></i></strong>
-
+    <strong>Meet our team <i class="fa fa-code-fork"></i></strong>
     <section class="profiles">
-      <article class="profile">
-        <img src="./assets/mujer.jpg" alt="Jessica Randall - profile photo" class="profile__avatar">
-        <h1 class="profile__name">
-          <p>Jessica Randall</p>
-        </h1>
-        <p class="profile__city">London, United Kingdom</p>
-        <p class="profile__description">"Front-end developer and avid reader."</p>
-      
-        <button class="profile__btn"><p>GitHub</p></button>
-        <button class="profile__btn">Frontend Mentor</button>
-        <button class="profile__btn">LinkedIn</button>
-        <button class="profile__btn">Twitter</button>
-        <button class="profile__btn">Instagram</button>
-      
+      <article class="card__wave waving">
+        <article class="wave"></article>
+        <article class="wave"></article>
+        <article class="wave"></article>
+
+        <section class="card__info">
+          <img src="./assets/mujer.jpg" alt="Jessica Randall - profile photo" class="profile__avatar">
+          <figcaption>
+            <p class="profile__name">Jessica Randall</p>
+            <p class="profile__city">London, United Kingdom </p>
+          </figcaption>
+          <blockquote>
+            <p class="profile__description">"Front-end developer and avid reader."</p>
+          </blockquote>
+          <section class="social">
+            <ul>
+              <li><a href=""><i class="fa fa-github" id=""></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </section>
+        </section>
       </article>
-      
+
+      <article class="card__wave waving">
+        <article class="wave"></article>
+        <article class="wave"></article>
+        <article class="wave"></article>
+
+        <section class="card__info">
+          <img src="./assets/david.jpeg" alt="Jessica Randall - profile photo" class="profile__avatar">
+          <figcaption>
+            <p class="profile__name">David Mojica</p>
+            <p class="profile__city">Medellín, Colombia</p>
+          </figcaption>
+          <blockquote>
+            <p class="profile__description">"Back-end developer and specialist in chair warming"</p>
+          </blockquote>
+          <section class="social">
+            <ul>
+              <li><a href=""><i class="fa fa-github" id=""></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </section>
+        </section>
+      </article>
+
+      <article class="card__wave waving profile__extra">
+        <article class="wave"></article>
+        <article class="wave"></article>
+        <article class="wave"></article>
+
+        <section class="card__info">
+          <img src="./assets/joe.webp" alt="Jessica Randall - profile photo" class="profile__avatar">
+          <figcaption>
+            <p class="profile__name">Joe Biden</p>
+            <p class="profile__city">Boston, United States </p>
+          </figcaption>
+          <blockquote>
+            <p class="profile__description">"U.S President and Back-end developer in the nights"</p>
+          </blockquote>
+          <section class="social">
+            <ul>
+              <li><a href=""><i class="fa fa-github" id=""></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </section>
+
+    <section class="contact__us">
+      <section class="contact__view">
+        <article class="col col1">
+          <blockquote>
+            <h2>Contact with our bussiness team!</h2>
+          </blockquote>
+        </article>
+        <article class="col col2">
+          <legend>
+            <h2>Contact</h2>
+            <p>*Required</p>
+          </legend>
+          <form action="">
+            <input type="text" name="sender__name" placeholder="Name*">
+            <input type="text" name="sender__email" placeholder="Email*">
+            <input type="text" name="sender__phone" placeholder="Phone*">
+            <textarea name="sender__message" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Send!">
+          </form>
+        </article>
+      </section>
     </section>
   </main>
 
-
+  <footer>
+    <article>
+      <figcaption>
+        <h3>MOJICA'S</h3>
+        <h5>WEB DEVELOPMENT</h5>
+      </figcaption>
+    </article>
+    <article>
+      <p>67St Park Plaza</p>
+      <p>mojica@dev.com</p>
+    </article>
+    <p> Monday - Saturday <br> 8am - 4pm</p>
+  </footer>
 </body>
 </html>
